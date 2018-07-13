@@ -35,7 +35,9 @@
     NSString *destinationPath = [self.documentsDirectory stringByAppendingPathComponent:self.databaseFilename];
     if (![[NSFileManager defaultManager] fileExistsAtPath:destinationPath]) {
         // The database file does not exist in the documents directory, so copy it from the main bundle now.
-        NSString *sourcePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:self.databaseFilename];
+        NSBundle *frameworkBundle = [NSBundle bundleForClass:[self class]];
+        
+        NSString *sourcePath = [[frameworkBundle resourcePath] stringByAppendingPathComponent:self.databaseFilename];
         NSError *error;
         [[NSFileManager defaultManager] copyItemAtPath:sourcePath toPath:destinationPath error:&error];
         
