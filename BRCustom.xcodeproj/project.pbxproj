@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		F4F6998920F33CE700D8E830 /* BRCustom-Universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F4F6998A20F33CE700D8E830 /* Build configuration list for PBXAggregateTarget "BRCustom-Universal" */;
+			buildPhases = (
+				F4807E4120F33DF600D43C7B /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "BRCustom-Universal";
+			productName = "BRCustom-Universal";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		F4532C9020F85E5300A75BDA /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = F4532C8420F85E5300A75BDA /* FMDatabase.h */; };
+		F4532C9120F85E5300A75BDA /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = F4532C8520F85E5300A75BDA /* FMDatabase.m */; };
+		F4532C9220F85E5300A75BDA /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F4532C8620F85E5300A75BDA /* FMDatabaseAdditions.h */; };
+		F4532C9320F85E5300A75BDA /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F4532C8720F85E5300A75BDA /* FMDatabaseAdditions.m */; };
+		F4532C9420F85E5300A75BDA /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = F4532C8820F85E5300A75BDA /* FMDatabasePool.h */; };
+		F4532C9520F85E5300A75BDA /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = F4532C8920F85E5300A75BDA /* FMDatabasePool.m */; };
+		F4532C9620F85E5300A75BDA /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = F4532C8A20F85E5300A75BDA /* FMDatabaseQueue.h */; };
+		F4532C9720F85E5300A75BDA /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F4532C8B20F85E5300A75BDA /* FMDatabaseQueue.m */; };
+		F4532C9820F85E5300A75BDA /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = F4532C8C20F85E5300A75BDA /* FMDB.h */; };
+		F4532C9920F85E5300A75BDA /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = F4532C8D20F85E5300A75BDA /* FMResultSet.h */; };
+		F4532C9A20F85E5300A75BDA /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F4532C8E20F85E5300A75BDA /* FMResultSet.m */; };
+		F4532C9B20F85E5300A75BDA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4532C8F20F85E5300A75BDA /* Info.plist */; };
+		F48B4DEA20F74CB700AB8B3D /* BRLoginKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F48B4DE420F74CB600AB8B3D /* BRLoginKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F48B4DEB20F74CB700AB8B3D /* BRLoginKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F48B4DE520F74CB600AB8B3D /* BRLoginKit.m */; };
+		F48B4DEC20F74CB700AB8B3D /* BRSucursalesKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F48B4DE620F74CB600AB8B3D /* BRSucursalesKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F48B4DED20F74CB700AB8B3D /* BRSucursalesKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F48B4DE720F74CB600AB8B3D /* BRSucursalesKit.m */; };
+		F48B4DEE20F74CB700AB8B3D /* BRUsuariosKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F48B4DE820F74CB600AB8B3D /* BRUsuariosKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F48B4DEF20F74CB700AB8B3D /* BRUsuariosKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F48B4DE920F74CB600AB8B3D /* BRUsuariosKit.m */; };
+		F48B4DF320F74CBE00AB8B3D /* BRDataBaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F48B4DF120F74CBE00AB8B3D /* BRDataBaseManager.h */; };
+		F48B4DF420F74CBE00AB8B3D /* BRDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F48B4DF220F74CBE00AB8B3D /* BRDataBaseManager.m */; };
+		F48B4DF720F74CC900AB8B3D /* BRCustomMain.m in Sources */ = {isa = PBXBuildFile; fileRef = F48B4DF520F74CC900AB8B3D /* BRCustomMain.m */; };
+		F48B4DF820F74CC900AB8B3D /* BRCustomMain.h in Headers */ = {isa = PBXBuildFile; fileRef = F48B4DF620F74CC900AB8B3D /* BRCustomMain.h */; };
+		F48B4E0020F74CD400AB8B3D /* BRLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = F48B4DFA20F74CD400AB8B3D /* BRLogin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F48B4E0120F74CD400AB8B3D /* BRLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = F48B4DFB20F74CD400AB8B3D /* BRLogin.m */; };
+		F48B4E0220F74CD400AB8B3D /* BRSucursal.h in Headers */ = {isa = PBXBuildFile; fileRef = F48B4DFC20F74CD400AB8B3D /* BRSucursal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F48B4E0320F74CD400AB8B3D /* BRSucursal.m in Sources */ = {isa = PBXBuildFile; fileRef = F48B4DFD20F74CD400AB8B3D /* BRSucursal.m */; };
+		F48B4E0420F74CD400AB8B3D /* BRUsuario.h in Headers */ = {isa = PBXBuildFile; fileRef = F48B4DFE20F74CD400AB8B3D /* BRUsuario.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F48B4E0520F74CD400AB8B3D /* BRUsuario.m in Sources */ = {isa = PBXBuildFile; fileRef = F48B4DFF20F74CD400AB8B3D /* BRUsuario.m */; };
+		F48B4E0D20F74CD900AB8B3D /* BRGetUsersOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = F48B4E0720F74CD900AB8B3D /* BRGetUsersOperation.h */; };
+		F48B4E0E20F74CD900AB8B3D /* BRGetUsersOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F48B4E0820F74CD900AB8B3D /* BRGetUsersOperation.m */; };
+		F48B4E0F20F74CD900AB8B3D /* BRRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = F48B4E0920F74CD900AB8B3D /* BRRequestOperation.h */; };
+		F48B4E1020F74CD900AB8B3D /* BRRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F48B4E0A20F74CD900AB8B3D /* BRRequestOperation.m */; };
+		F48B4E1120F74CD900AB8B3D /* BRSaveUserOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = F48B4E0B20F74CD900AB8B3D /* BRSaveUserOperation.h */; };
+		F48B4E1220F74CD900AB8B3D /* BRSaveUserOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F48B4E0C20F74CD900AB8B3D /* BRSaveUserOperation.m */; };
+		F4F6998320F33B7800D8E830 /* BRCustom.h in Headers */ = {isa = PBXBuildFile; fileRef = F4F6998120F33B7800D8E830 /* BRCustom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4F699AB20F33FA000D8E830 /* brUsers.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = F4F699AA20F33FA000D8E830 /* brUsers.sqlite */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F4532C8420F85E5300A75BDA /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		F4532C8520F85E5300A75BDA /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		F4532C8620F85E5300A75BDA /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		F4532C8720F85E5300A75BDA /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		F4532C8820F85E5300A75BDA /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		F4532C8920F85E5300A75BDA /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		F4532C8A20F85E5300A75BDA /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		F4532C8B20F85E5300A75BDA /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		F4532C8C20F85E5300A75BDA /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		F4532C8D20F85E5300A75BDA /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		F4532C8E20F85E5300A75BDA /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		F4532C8F20F85E5300A75BDA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F48B4DE420F74CB600AB8B3D /* BRLoginKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRLoginKit.h; sourceTree = "<group>"; };
+		F48B4DE520F74CB600AB8B3D /* BRLoginKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRLoginKit.m; sourceTree = "<group>"; };
+		F48B4DE620F74CB600AB8B3D /* BRSucursalesKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRSucursalesKit.h; sourceTree = "<group>"; };
+		F48B4DE720F74CB600AB8B3D /* BRSucursalesKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRSucursalesKit.m; sourceTree = "<group>"; };
+		F48B4DE820F74CB600AB8B3D /* BRUsuariosKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRUsuariosKit.h; sourceTree = "<group>"; };
+		F48B4DE920F74CB600AB8B3D /* BRUsuariosKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRUsuariosKit.m; sourceTree = "<group>"; };
+		F48B4DF120F74CBE00AB8B3D /* BRDataBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRDataBaseManager.h; sourceTree = "<group>"; };
+		F48B4DF220F74CBE00AB8B3D /* BRDataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDataBaseManager.m; sourceTree = "<group>"; };
+		F48B4DF520F74CC900AB8B3D /* BRCustomMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRCustomMain.m; sourceTree = "<group>"; };
+		F48B4DF620F74CC900AB8B3D /* BRCustomMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRCustomMain.h; sourceTree = "<group>"; };
+		F48B4DFA20F74CD400AB8B3D /* BRLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRLogin.h; sourceTree = "<group>"; };
+		F48B4DFB20F74CD400AB8B3D /* BRLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRLogin.m; sourceTree = "<group>"; };
+		F48B4DFC20F74CD400AB8B3D /* BRSucursal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRSucursal.h; sourceTree = "<group>"; };
+		F48B4DFD20F74CD400AB8B3D /* BRSucursal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRSucursal.m; sourceTree = "<group>"; };
+		F48B4DFE20F74CD400AB8B3D /* BRUsuario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRUsuario.h; sourceTree = "<group>"; };
+		F48B4DFF20F74CD400AB8B3D /* BRUsuario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRUsuario.m; sourceTree = "<group>"; };
+		F48B4E0720F74CD900AB8B3D /* BRGetUsersOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRGetUsersOperation.h; sourceTree = "<group>"; };
+		F48B4E0820F74CD900AB8B3D /* BRGetUsersOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRGetUsersOperation.m; sourceTree = "<group>"; };
+		F48B4E0920F74CD900AB8B3D /* BRRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRRequestOperation.h; sourceTree = "<group>"; };
+		F48B4E0A20F74CD900AB8B3D /* BRRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRRequestOperation.m; sourceTree = "<group>"; };
+		F48B4E0B20F74CD900AB8B3D /* BRSaveUserOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRSaveUserOperation.h; sourceTree = "<group>"; };
+		F48B4E0C20F74CD900AB8B3D /* BRSaveUserOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRSaveUserOperation.m; sourceTree = "<group>"; };
+		F4F6997E20F33B7800D8E830 /* BRCustom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BRCustom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4F6998120F33B7800D8E830 /* BRCustom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRCustom.h; sourceTree = "<group>"; };
+		F4F6998220F33B7800D8E830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4F699AA20F33FA000D8E830 /* brUsers.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = brUsers.sqlite; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4F6997A20F33B7800D8E830 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4532C8220F85E3900A75BDA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F4532C8320F85E5300A75BDA /* FMDatabase */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F4532C8320F85E5300A75BDA /* FMDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				F4532C8420F85E5300A75BDA /* FMDatabase.h */,
+				F4532C8520F85E5300A75BDA /* FMDatabase.m */,
+				F4532C8620F85E5300A75BDA /* FMDatabaseAdditions.h */,
+				F4532C8720F85E5300A75BDA /* FMDatabaseAdditions.m */,
+				F4532C8820F85E5300A75BDA /* FMDatabasePool.h */,
+				F4532C8920F85E5300A75BDA /* FMDatabasePool.m */,
+				F4532C8A20F85E5300A75BDA /* FMDatabaseQueue.h */,
+				F4532C8B20F85E5300A75BDA /* FMDatabaseQueue.m */,
+				F4532C8C20F85E5300A75BDA /* FMDB.h */,
+				F4532C8D20F85E5300A75BDA /* FMResultSet.h */,
+				F4532C8E20F85E5300A75BDA /* FMResultSet.m */,
+				F4532C8F20F85E5300A75BDA /* Info.plist */,
+			);
+			path = FMDatabase;
+			sourceTree = "<group>";
+		};
+		F48B4DE320F74CB600AB8B3D /* BRKit */ = {
+			isa = PBXGroup;
+			children = (
+				F48B4DF620F74CC900AB8B3D /* BRCustomMain.h */,
+				F48B4DF520F74CC900AB8B3D /* BRCustomMain.m */,
+				F48B4DE420F74CB600AB8B3D /* BRLoginKit.h */,
+				F48B4DE520F74CB600AB8B3D /* BRLoginKit.m */,
+				F48B4DE620F74CB600AB8B3D /* BRSucursalesKit.h */,
+				F48B4DE720F74CB600AB8B3D /* BRSucursalesKit.m */,
+				F48B4DE820F74CB600AB8B3D /* BRUsuariosKit.h */,
+				F48B4DE920F74CB600AB8B3D /* BRUsuariosKit.m */,
+			);
+			path = BRKit;
+			sourceTree = "<group>";
+		};
+		F48B4DF020F74CBE00AB8B3D /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				F48B4DF120F74CBE00AB8B3D /* BRDataBaseManager.h */,
+				F48B4DF220F74CBE00AB8B3D /* BRDataBaseManager.m */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		F48B4DF920F74CD400AB8B3D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F48B4DFA20F74CD400AB8B3D /* BRLogin.h */,
+				F48B4DFB20F74CD400AB8B3D /* BRLogin.m */,
+				F48B4DFC20F74CD400AB8B3D /* BRSucursal.h */,
+				F48B4DFD20F74CD400AB8B3D /* BRSucursal.m */,
+				F48B4DFE20F74CD400AB8B3D /* BRUsuario.h */,
+				F48B4DFF20F74CD400AB8B3D /* BRUsuario.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F48B4E0620F74CD900AB8B3D /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				F48B4E0720F74CD900AB8B3D /* BRGetUsersOperation.h */,
+				F48B4E0820F74CD900AB8B3D /* BRGetUsersOperation.m */,
+				F48B4E0920F74CD900AB8B3D /* BRRequestOperation.h */,
+				F48B4E0A20F74CD900AB8B3D /* BRRequestOperation.m */,
+				F48B4E0B20F74CD900AB8B3D /* BRSaveUserOperation.h */,
+				F48B4E0C20F74CD900AB8B3D /* BRSaveUserOperation.m */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		F4F6997420F33B7800D8E830 = {
+			isa = PBXGroup;
+			children = (
+				F4F699AA20F33FA000D8E830 /* brUsers.sqlite */,
+				F4F6998020F33B7800D8E830 /* BRCustom */,
+				F4F6997F20F33B7800D8E830 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4F6997F20F33B7800D8E830 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4F6997E20F33B7800D8E830 /* BRCustom.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4F6998020F33B7800D8E830 /* BRCustom */ = {
+			isa = PBXGroup;
+			children = (
+				F4532C8220F85E3900A75BDA /* Utilities */,
+				F48B4E0620F74CD900AB8B3D /* Operations */,
+				F48B4DF920F74CD400AB8B3D /* Model */,
+				F48B4DF020F74CBE00AB8B3D /* DataBase */,
+				F48B4DE320F74CB600AB8B3D /* BRKit */,
+				F4F6998120F33B7800D8E830 /* BRCustom.h */,
+				F4F6998220F33B7800D8E830 /* Info.plist */,
+			);
+			path = BRCustom;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F4F6997B20F33B7800D8E830 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F48B4E0220F74CD400AB8B3D /* BRSucursal.h in Headers */,
+				F48B4DEE20F74CB700AB8B3D /* BRUsuariosKit.h in Headers */,
+				F4532C9220F85E5300A75BDA /* FMDatabaseAdditions.h in Headers */,
+				F48B4E0D20F74CD900AB8B3D /* BRGetUsersOperation.h in Headers */,
+				F4532C9620F85E5300A75BDA /* FMDatabaseQueue.h in Headers */,
+				F48B4E0020F74CD400AB8B3D /* BRLogin.h in Headers */,
+				F48B4E0420F74CD400AB8B3D /* BRUsuario.h in Headers */,
+				F4532C9020F85E5300A75BDA /* FMDatabase.h in Headers */,
+				F48B4DEC20F74CB700AB8B3D /* BRSucursalesKit.h in Headers */,
+				F4532C9920F85E5300A75BDA /* FMResultSet.h in Headers */,
+				F48B4DEA20F74CB700AB8B3D /* BRLoginKit.h in Headers */,
+				F4532C9820F85E5300A75BDA /* FMDB.h in Headers */,
+				F4F6998320F33B7800D8E830 /* BRCustom.h in Headers */,
+				F48B4E0F20F74CD900AB8B3D /* BRRequestOperation.h in Headers */,
+				F48B4DF320F74CBE00AB8B3D /* BRDataBaseManager.h in Headers */,
+				F4532C9420F85E5300A75BDA /* FMDatabasePool.h in Headers */,
+				F48B4DF820F74CC900AB8B3D /* BRCustomMain.h in Headers */,
+				F48B4E1120F74CD900AB8B3D /* BRSaveUserOperation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F4F6997D20F33B7800D8E830 /* BRCustom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4F6998620F33B7800D8E830 /* Build configuration list for PBXNativeTarget "BRCustom" */;
+			buildPhases = (
+				F4F6997920F33B7800D8E830 /* Sources */,
+				F4F6997A20F33B7800D8E830 /* Frameworks */,
+				F4F6997B20F33B7800D8E830 /* Headers */,
+				F4F6997C20F33B7800D8E830 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BRCustom;
+			productName = BRCustom;
+			productReference = F4F6997E20F33B7800D8E830 /* BRCustom.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4F6997520F33B7800D8E830 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				TargetAttributes = {
+					F4F6997D20F33B7800D8E830 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = CJVHM222CX;
+						ProvisioningStyle = Automatic;
+					};
+					F4F6998920F33CE700D8E830 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = CJVHM222CX;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F4F6997820F33B7800D8E830 /* Build configuration list for PBXProject "BRCustom" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F4F6997420F33B7800D8E830;
+			productRefGroup = F4F6997F20F33B7800D8E830 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4F6997D20F33B7800D8E830 /* BRCustom */,
+				F4F6998920F33CE700D8E830 /* BRCustom-Universal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4F6997C20F33B7800D8E830 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4532C9B20F85E5300A75BDA /* Info.plist in Resources */,
+				F4F699AB20F33FA000D8E830 /* brUsers.sqlite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F4807E4120F33DF600D43C7B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script is based on Jacob Van Order's answer on apple dev forums https://devforums.apple.com/message/971277\n# See also http://spin.atomicobject.com/2011/12/13/building-a-universal-framework-for-ios/ for the start\n\n\n# To get this to work with a Xcode 6 Cocoa Touch Framework, create Framework\n# Then create a new Aggregate Target. Throw this script into a Build Script Phrase on the Aggregate\n\n\n######################\n# Options\n######################\n\nREVEAL_ARCHIVE_IN_FINDER=true\n\nFRAMEWORK_NAME=\"${PROJECT_NAME}\"\n\nFRAMEWORK_VERSION=\"${FRAMEWORK_VERSION}\"\n\nSIMULATOR_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework\"\n\nDEVICE_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework\"\n\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\"\n\nFRAMEWORK=\"${UNIVERSAL_LIBRARY_DIR}/${FRAMEWORK_NAME}.framework\"\n\n\n######################\n# Build Frameworks\n######################\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphonesimulator -target ${PROJECT_NAME} -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphonesimulator | echo\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphoneos -target ${PROJECT_NAME} -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphoneos | echo\n\n#xcodebuild -target ${PROJECT_NAME} ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" | echo\n\n#xcodebuild -target ${PROJECT_NAME} ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphonesimulator  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" | echo\n\n\n######################\n# Create directory for universal\n######################\n\nrm -rf \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${FRAMEWORK}\"\n\n\n######################\n# Copy files Framework\n######################\n\ncp -r \"${DEVICE_LIBRARY_PATH}/.\" \"${FRAMEWORK}\"\n\n\n######################\n# Make fat universal binary\n######################\n\nlipo \"${SIMULATOR_LIBRARY_PATH}/${FRAMEWORK_NAME}\" \"${DEVICE_LIBRARY_PATH}/${FRAMEWORK_NAME}\" -create -output \"${FRAMEWORK}/${FRAMEWORK_NAME}\" | echo\n\n\n######################\n# On Release, copy the result to desktop folder\n######################\n\nif [ \"${CONFIGURATION}\" == \"Release\" ]; then\nmkdir \"${HOME}/Desktop/${FRAMEWORK_NAME}-${CONFIGURATION}-iphoneuniversal-${FRAMEWORK_VERSION}/\"\ncp -r \"${FRAMEWORK}\" \"${HOME}/Desktop/${FRAMEWORK_NAME}-${CONFIGURATION}-iphoneuniversal-${FRAMEWORK_VERSION}/\"\nfi\n\n\n######################\n# If needed, open the Framework folder\n######################\n\nif [ ${REVEAL_ARCHIVE_IN_FINDER} = true ]; then\nif [ \"${CONFIGURATION}\" == \"Release\" ]; then\nopen \"${HOME}/Desktop/${FRAMEWORK_NAME}-${CONFIGURATION}-iphoneuniversal-${FRAMEWORK_VERSION}/\"\nelse\nopen \"${UNIVERSAL_LIBRARY_DIR}/\"\nfi\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4F6997920F33B7800D8E830 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F48B4DED20F74CB700AB8B3D /* BRSucursalesKit.m in Sources */,
+				F48B4E0120F74CD400AB8B3D /* BRLogin.m in Sources */,
+				F48B4E0520F74CD400AB8B3D /* BRUsuario.m in Sources */,
+				F4532C9120F85E5300A75BDA /* FMDatabase.m in Sources */,
+				F48B4E1220F74CD900AB8B3D /* BRSaveUserOperation.m in Sources */,
+				F4532C9720F85E5300A75BDA /* FMDatabaseQueue.m in Sources */,
+				F4532C9A20F85E5300A75BDA /* FMResultSet.m in Sources */,
+				F48B4E0320F74CD400AB8B3D /* BRSucursal.m in Sources */,
+				F48B4E0E20F74CD900AB8B3D /* BRGetUsersOperation.m in Sources */,
+				F48B4DEF20F74CB700AB8B3D /* BRUsuariosKit.m in Sources */,
+				F4532C9320F85E5300A75BDA /* FMDatabaseAdditions.m in Sources */,
+				F48B4DF420F74CBE00AB8B3D /* BRDataBaseManager.m in Sources */,
+				F48B4E1020F74CD900AB8B3D /* BRRequestOperation.m in Sources */,
+				F4532C9520F85E5300A75BDA /* FMDatabasePool.m in Sources */,
+				F48B4DF720F74CC900AB8B3D /* BRCustomMain.m in Sources */,
+				F48B4DEB20F74CB700AB8B3D /* BRLoginKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F4F6998420F33B7800D8E830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/BRCustom",
+					"$(PROJECT_DIR)/Framewoks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F4F6998520F33B7800D8E830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/BRCustom",
+					"$(PROJECT_DIR)/Framewoks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F4F6998720F33B7800D8E830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CJVHM222CX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BRCustom/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikevillegas.BRCustom.BRCustom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F4F6998820F33B7800D8E830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CJVHM222CX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BRCustom/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikevillegas.BRCustom.BRCustom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F4F6998B20F33CE700D8E830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = CJVHM222CX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F4F6998C20F33CE700D8E830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = CJVHM222CX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4F6997820F33B7800D8E830 /* Build configuration list for PBXProject "BRCustom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4F6998420F33B7800D8E830 /* Debug */,
+				F4F6998520F33B7800D8E830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4F6998620F33B7800D8E830 /* Build configuration list for PBXNativeTarget "BRCustom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4F6998720F33B7800D8E830 /* Debug */,
+				F4F6998820F33B7800D8E830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4F6998A20F33CE700D8E830 /* Build configuration list for PBXAggregateTarget "BRCustom-Universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4F6998B20F33CE700D8E830 /* Debug */,
+				F4F6998C20F33CE700D8E830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4F6997520F33B7800D8E830 /* Project object */;
+}
